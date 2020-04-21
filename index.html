@@ -1,0 +1,187 @@
+<!doctype html> <!-- HTML5 document type definition-->
+<html class="no-js" lang="en"> <!-- main html element-->
+    <head>
+        <!-- element inside head element or tag-->
+        <meta charset="utf-8"> <!-- Define the character type-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> HTML5 Crash Course </title> <!-- The title tag define the title of the page-->
+        <meta name="description" content=""> <!-- Describe the goal of the web page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- screen type-->
+        <!-- The favicon define the image place next to the webpage title-->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css"> <!-- Define the style sheet of the page-->
+        <link rel="stylesheet" href="css/main.css"> <!-- Another Style Sheet of the page-->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script> <!-- Javascript document for thepage-->
+        <!-- End of the head element or tag -->
+    </head>
+    <body>
+        <div class="maindiv"> <!-- Defining a division inside the body element-->
+            <!--The elements or tags inside the body element will determine the the page -->
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <!-- Add the contents of your site or application here -->
+            <a href="blog.html"> Go to Website Blog </a>
+            <hr>
+            <h1> This is HTML5 Crash Course . </h1> <!--h1 is the biggest heading in html-->
+            <h5> We have 6 headings in HTML:" h1, h2, h3, h4, h5, h6" and can be used accordingly </h5>
+            <!-- Other headings are h5, h4, h3, h2,h1-->
+            <p> The paragraph tag "p" with opening and closing angle is used to display a paragraph </p>
+            <br> <!-- Define next line or send you to the next line-->
+            <p> You can also define a link with an anchor "a" like this <a href="https://www.udemy.com/course/interactive-html-course/" target="_blank" > Click here for HTML5 tutorial</a> </p>
+            <!-- You can define ordered and unordered lists using ul and ol tags-->
+            <p> Defining an unordered list with the ul tag</p>
+            <ul>
+                <li> First Element of Unordered List </li>
+                <li> Second Element of Unordered List </li>
+                <li> Third Element of Unordered List </li>
+                <li> Forth Element of Unordered List </li>
+            </ul>
+            <p> Defining an ordered list with the ol tag</p>
+            <ol>
+                <li> First Element of ordered List </li>
+                <li> Second Element of ordered List </li>
+                <li> Third Element of ordered List </li>
+                <li> Forth Element of ordered List </li>
+            </ol>
+            <p> Defining a table using the table tag like this "table"</p>
+            <table>
+                <!--table head-->
+                <thead>
+                    <tr>
+                        <th> First Name  </th>
+                        <th> Last Name  </th>
+                        <th> Email  </th>
+                        <th> Cell  Number </th>
+                        <th>  Age  </th>
+                        <th>  Birth Date </th>
+                    </tr>    
+                 </thead>
+                <!--table body-->
+                <tbody>
+                    <tr>
+                        <td> Jeancy </td>
+                        <td> Tshibemba </td>
+                        <td> jeancyts@gmail.com </td>
+                        <td> 0765804488 </td>
+                        <td> 38 </td>
+                        <td> 21/12/1982 </td>
+                    </tr>
+                    <tr>
+                        <td> Dieudo </td>
+                        <td> Baya </td>
+                        <td> dbaya@gmail.com </td>
+                        <td> 0835804488 </td>
+                        <td> 28 </td>
+                        <td> 10/02/1992 </td>
+                    </tr>
+                    <tr>
+                        <td> Ali </td>
+                        <td> Tshimweneka </td>
+                        <td> atshimweneka@gmail.com </td>
+                        <td> 078804488 </td>
+                        <td> 25 </td>
+                        <td> 09/04/1995 </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+             <!-- End of the table tag-->
+             <!--Defining a form Tag-->
+             <form method="POST" action="data.php"> <!--start of the form-->
+                 <div class="formdiv">
+                     <div>
+                        <label> First Name </label>
+                        <input type="text" name="First Name" placeholder="Enter your name">
+                     </div>
+                     <br>
+                     <div>
+                        <label> Surname </label>
+                        <input type="text" name="Surname" placeholder="Enter Your Surname">
+                     </div>
+                     <br>
+                     <div>
+                          <label> Gender </label>
+                              <!-- Drop down menu-->
+                          <select name="gender"> 
+                              <!-- different option-->
+                              <option value="male"> Male </option>
+                              <option value="female"> Female </option>
+                              <option value="other"> Other </option>
+                        </select>
+                     </div>
+                     <br> <!-- Next line or line break-->
+                     <div>
+                         <label> Email Address </label>
+                         <input type="email" name="Email Address" placeholder="Enter email">
+                     </div>
+                     <br>
+                     <div>
+                        <label> Cell Phone Number </label>
+                        <input type="tel" name="Cell Number" placeholder="Enter your number">
+                     </div>
+                     <br>
+                     <div>
+                        <label> Age </label>
+                        <input type="number" name="age" value="30">
+                     </div>
+                     <br>
+                     <div>
+                        <label> Address </label>
+                        <input type="text" name="Address" placeholder="Enter your address">
+                     </div>
+                     <br>
+                     <div>
+                        <label> Birth Date </label>
+                        <input type="date" name="Birth Date"> <!-- placeholder attribute not allowed-->
+                     </div>
+                     <br>
+                     <div>
+                        <label> Message </label>
+                        <textarea  name="message">  </textarea>
+                     </div>
+                     <br>
+                     <div>
+                        <label> Submit </label>
+                        <input type="submit" name="submit" value="Submit">
+                      </div>   
+                 </div>    
+             </form>
+             <!-- button outside a form -->
+             <br>
+             <div>
+                 <button> Click Me </button>
+             </div>
+             <p> The image tag img is used to display an image on the page</p>
+             <img src="imges/pict" alt="This is my image"> <!-- Self closing tag-->
+             <p> Here is how you define an abbreviation with abbr tag </p>
+             <abbr title="Universel Resource Locator"> URL </abbr>
+             
+             <p> The use of cite tag </p>
+             <p>Michelangelo sculpted <cite>David</cite> between 1501 and 1504</p>
+             
+             <h4> HTML5 Semantic Tags</h4>
+             <p>
+                 A Sematic Element clearly describes its meaning to both the web browser and the developer
+                 They are: hearder, footer, aside,main,article,nav,section and details
+             </p>
+             <blockquote cite="https://www.udemy.com/course/interactive-html-course/">
+                 A paragraph is a series of related sentences developing a central idea, 
+                 called the topic. Try to think about paragraphs in terms of thematic 
+                 unity: a paragraph is a sentence or a group of sentences that supports
+                 one central, unified idea. 
+                 Paragraphs add one idea at a time to your broader argument.
+                 Paragraphs are the building blocks of papers. 
+                 Many students define paragraphs in terms of length: a paragraph is 
+                 a group of at least five sentences, a paragraph is half a page long, etc.
+                 In reality, though, the unity and coherence of ideas among sentences is 
+                 what constitutes a paragraph.
+             </blockquote>>
+                    
+        </div>
+    
+    </body>
+</html>
